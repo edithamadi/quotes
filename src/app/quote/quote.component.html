@@ -2,14 +2,7 @@
   THE QUOTES
 </h1>
 
-
 <div *ngFor = 'let quote of quotes'>
-  {{quote.identity}}
-  {{quote.msg}}
-  {{quote.author}}
-  {{quote.upvote}}
-  {{quote.downvote}}
-  {{quote.dateadded}}
-
+  <h3>{{quote.identity}}.</h3><h1>{{quote.msg}}.</h1> <em>{{quote.author}}</em><br><br> <button>{{quote.upvote}}</button><button>{{quote.downvote}}</button><br><br> <u>{{quote.dateadded}}</u>
 
 </div>
