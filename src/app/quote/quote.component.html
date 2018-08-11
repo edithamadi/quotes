@@ -2,7 +2,8 @@
   INSPIRATIONAL QUOTES
 </h1>
 
-<div *ngFor = 'let quote of quotes'>
+<div *ngFor = 'let quote of quotes;let i = index'>
   <h3>{{quote.identity}}.</h3><h3>{{quote.msg}}.</h3> <button>{{quote.upvote}}</button><button>{{quote.downvote}}</button><em>{{quote.author}}</em> <br> <u>{{quote.dateadded}}</u>
+  <button (click)='toogleDetails(i)'>Toogle Detais</button>
 <app-quote-details [quote]='quote'></app-quote-details>
 </div>
