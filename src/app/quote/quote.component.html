@@ -1,8 +1,8 @@
 <h1>
-  THE QUOTES
+  INSPIRATIONAL QUOTES
 </h1>
 
 <div *ngFor = 'let quote of quotes'>
-  <h3>{{quote.identity}}.</h3><h2>{{quote.msg}}.</h2> <em>{{quote.author}}</em><br><br> <button>{{quote.upvote}}</button><button>{{quote.downvote}}</button><br><br> <u>{{quote.dateadded}}</u>
-
+  <h3>{{quote.identity}}.</h3><h3>{{quote.msg}}.</h3> <button>{{quote.upvote}}</button><button>{{quote.downvote}}</button><em>{{quote.author}}</em> <br> <u>{{quote.dateadded}}</u>
+<app-quote-details [quote]='quote'></app-quote-details>
 </div>
