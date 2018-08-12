@@ -3,7 +3,9 @@
 </h1>
 
 <div *ngFor = 'let quote of quotes;let i = index'>
-  <h3>{{quote.identity}}.</h3><h3>{{quote.msg}}.</h3> <button>{{quote.upvote}}</button><button>{{quote.downvote}}</button><em>{{quote.author}}</em> <br> <u>{{quote.dateadded}}</u>
-  <button (click)='toogleDetails(i)'>Toogle Detais</button>
-<app-quote-details *ngIf="quote.showDescription" [quote]='quote'(isComplete)='completeQuote($event,i)'></app-quote-details>
-</div>
+  <h3>{{quote.identity}}.</h3><h3>{{quote.msg}}.</h3><h3>Author: </h3><em>{{quote.author}}<br><h3>Submitted by :</h3><em>{{quote.submitter}} <button>{{quote.upvote}}</button><button>{{quote.downvote}}</button></em> <br>
+
+  <p>This quote was created :<u>{{quote.completeDate|quoteDuration}}</u> days ago</p>
+
+
+  <app-quote-details *ngIf='quote.showDescription' [quote]='quote'(isComplete)='completeQuote($event,i)'></app-quote-details>
