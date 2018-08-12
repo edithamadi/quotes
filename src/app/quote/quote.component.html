@@ -9,4 +9,4 @@
 
 <hr>
 
-  <app-quote-details *ngIf='quote.showDescription' [quote]='quote'(isComplete)='completeQuote($event,i)'></app-quote-details>
+  <app-quote-details *ngIf='quote.showMsg' [quote]='quote'(isComplete)='completeQuote($event,i)'></app-quote-details>
