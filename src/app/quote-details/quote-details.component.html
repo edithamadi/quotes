@@ -1,9 +1,10 @@
 <p>
   {{quote.msg}}
 </p>
-<button class="btn btn-danger"(click) = 'quoteComplete(true)'> Complete </button>
 
 <p>{{quote.msg}}</p>
 <p>{{quote.author}} </p>
 <p>{{quote.submitter}}</p>
 <p>The quote was created  {{quote.completeDate|quoteDuration}} days ago</p>
+
+<span>{{quote.upVote}} <button>Upvote</button></span><span>{{quote.downVote}} <button>Downvote</button></span>
