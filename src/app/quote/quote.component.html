@@ -1,12 +1,18 @@
   <h1>
   INSPIRATIONAL QUOTES
 </h1>
-
+  <div class="container">
+      <app-quote-form></app-quote-form>
 <div *ngFor = 'let quote of quotes;let i = index'>
-  <h3>{{quote.identity}}.</h3><h3>{{quote.msg}}.</h3><h3>Author: </h3><em>{{quote.author}}<br><h3>Submitted by :</h3><em>{{quote.submitter}} <button>{{quote.upvote}}</button><button>{{quote.downvote}}</button></em> <br>
+
+
+  <h3>{{quote.identity}}.</h3><h3>{{quote.msg}}.</h3><h3>Author: </h3><em>{{quote.author}}</em><br><h3>Person who Submitted by :</h3><em>{{quote.submitter}}</em> <button>{{quote.upvote}}</button><button>{{quote.downvote}}</button> <br>
 
   <p>This quote was created : <u>{{quote.completeDate|quoteDuration}}</u> days ago</p>
 
+
 <hr>
 
-  <app-quote-details *ngIf='quote.showMsg' [quote]='quote'(isComplete)='completeQuote($event,i)'></app-quote-details>
+  <app-quote-details *ngIf='quote.showDescription' [quote]='quote'(isComplete)='completeQuote($event,i)'></app-quote-details>
+  </div>
+</div>
