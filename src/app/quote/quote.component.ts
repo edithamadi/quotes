@@ -15,6 +15,12 @@ export class QuoteComponent implements OnInit {
             this.quotes.splice(index,1);
             }
             }
+            upvote(index){
+              this.quotes[index].upvotes++
+            }
+            downvote(index){
+              this.quotes[index].downvotes++
+            }
 
             constructor() { }
 
