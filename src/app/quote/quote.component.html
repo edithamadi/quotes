@@ -6,13 +6,15 @@
 <div *ngFor = 'let quote of quotes;let i = index'>
 
 
-  <h3>{{quote.identity}}.</h3><h3>{{quote.msg}}.</h3><h3>Author: </h3><em>{{quote.author}}</em><br><h3>Person who Submitted by :</h3><em>{{quote.submitter}}</em> <button>{{quote.upvote}}</button><button>{{quote.downvote}}</button> <br>
-
+  <h3>{{quote.identity}}.{{quote.msg}}.</h3>
+  <h3>Author: </h3><em>{{quote.author}}</em><br>
+  <h3>Submitted by :</h3><em>{{quote.submitter}}</em>
+  
   <p>This quote was created : <u>{{quote.completeDate|quoteDuration}}</u> days ago</p>
-
-
+  <app-quote-details></app-quote-details>
 <hr>
 
   <app-quote-details *ngIf='quote.showDescription' [quote]='quote'(isComplete)='completeQuote($event,i)'></app-quote-details>
-  </div>
+  
+</div>
 </div>
