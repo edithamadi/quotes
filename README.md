@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This repository is a project that demonstrates an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. 
 
 ## How it works
-- The user is able to :
+The user is able to :
 
 - Create a new quote by filling in the quotes nd the details of the quotes in the form available.
 
