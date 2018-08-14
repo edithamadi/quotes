@@ -2,6 +2,42 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
 
+## Brief description of Application
+This repository is a project that demonstrates an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. 
+
+## How it works
+The user is able to :
+
+Create a new quote by filling in the quotes nd the details of the quotes in the form available.
+
+Upvote or downvote a quote.
+
+Delete a quote
+
+See the number of upvotes and number of downvotes for each quote.
+
+## How to install Application
+
+## To see the code written use the following commands:
+
+git clone https://github.com/edithamadi/quotes.git
+cd quotes
+atom .
+code . (if using visual studio code is your preffered text editor)
+
+## Link to deployed website
+https://edithamadi.github.io/quotes/
+
+## Support and Contact Details
+For any inquiries or suggestions about my page contact me at: edithmcamadi5@gmail.com
+
+## License
+MIT License
+
+Copyright (c) 2018 Edith Amadi
+
+## Author(s)
+Edith Amadi
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
