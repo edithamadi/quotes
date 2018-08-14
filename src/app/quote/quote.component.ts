@@ -8,8 +8,9 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
 
     quotes = [
-      new Quote(1,'"Get busy living,or get busy dying"','Stephen King','Edith Amadi',0, 0,new Date(2018,11,31)),
+      new Quote(1,"Get busy living,or get busy dying","Stephen King","Edith Amadi",0,0,new Date(2018,7,14)),
           ];
+
     completeQuote(isComplete,index){
         if (isComplete){
             this.quotes.splice(index,1);
@@ -21,6 +22,11 @@ export class QuoteComponent implements OnInit {
             downvote(index){
               this.quotes[index].downvotes++
             }
+
+    addNewQuote(quote){
+      this.quotes.push(quote)
+
+  }
 
             constructor() { }
 
